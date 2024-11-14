@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="./assets/images/AMIT.jpg" />
+		<title>Amit_Prajapati</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <!-- <link rel="stylesheet" href="./project-pages/Project-1/project1.css"> -->
+
+
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a class="nav-title-link" href="./index.html">
+          <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+          <span class="nav-title">Home</span>
+        </a>
+        <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <a class="button" id='contact_button''>
+          <span class="button-text">Contact Me</span>
+        </a>
+      <!-- </a> -->
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <!-- 
+            TODO
+
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          -->
+          <img src="./assets/images/AMIT.jpg" class="portfolio-header-image">
+          <!-- <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311"> -->
+            <!-- <span class="image-caption">Unemployables #1311</span> -->
+          <!-- </a> -->
+        </div>
+
+          <!-- 
+            TODO
+
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+              <span class="main-title">Hey, I'm Amit.</span>
+              <br>
+              <br>
+              <div class="body-text">I'm a data science student with a passion for exploring the vast world of data and applying advanced analytics to solve real-world challenges.</div>
+            </div>
+            <!-- <a class="button" id="my-work-link">
+              <span class="button-text">Check out my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+            <a class="button" href="./AMIT_PRAJAPATI_RESUME_Latest.pdf">
+              <span class="button-text">Resume📄</span>
+            </a>
+        </div>
+      </div>
+    
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="about-section">
+        <span class="subheader-text">My Background / About Me</span>
+        <hr>
+        <br>
+        <div class="about-section-content">
+          <div class="body-text">
+            Hello, I'm Amit Prajapati, a dedicated data science student with a passion for exploring diverse domains of Data Science. As a recent graduate in Data Science from NMIMS University and will pursue my Master's at Worcester Polytechnic Institute (WPI), I have acquired valuable analytical and problem-solving skills. My academic journey has involved rigorous studies in Machine Learning, Deep Learning, Computer Vision, and Natural Language Processing, sparking a keen curiosity for developing cutting-edge applications using such domains. I believe that the fusion of Data Science with various domains holds immense potential to create innovative and impactful solutions.</div>
+          <!-- <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div> -->
+        </div>
+      </div>
+
+
+      <!-- MY INTERNSHIP SECTION -->
+      <div id="my-internship-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">My Internships</span>
+        <hr>
+        <div class="projects-container">
+
+          <div class="project-card">
+            <img src="./assets/images/oca.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="https://www.new-internship-company.com" class="custom-link">OffShore Construction Associates</a>
+              </div>
+              <div class="role-text">
+                <span class="role">Role:</span> <span class="job-title">Junior AI Consultant</span>
+              </div>
+            </div>
+            <a class="button" href="./internship-pages/NewInternship/new-internship.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/images/munichre.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                    <a href="https://www.munichre.com/en.html" class="custom-link">Munich RE</a>
+                </div>
+              <!-- <div class="subheader-text project-title">Munich RE</div> -->
+              <div class="role-text">
+                <span class="role">Role:</span> <span class="job-title">Data Analyst Intern</span>
+              </div>
+              <!-- <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div> -->
+            </div>
+            <a class="button" href="./internship-pages/MunichRe/INTERN1.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/fidelis.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                    <a href="https://www.fidelis.fund/" class="custom-link">Fidelis Macro Global Fund</a>
+                </div>
+              <!-- <div class="subheader-text project-title">Fidelis</div> -->
+              <!-- <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div> -->
+              <div class="role-text">
+                <span class="role">Role:</span> <span class="job-title">Quant Intern</span>
+              </div>
+            </div>
+            <a class="button" href="./internship-pages/FIDELIS/INTERN2.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/ltdc.png" class="project-image">
+            <div class="project-card-text-container">
+                <div class="subheader-text project-title">
+                    <a href="https://www.letthedataconfess.com/" class="custom-link">Let The Data Confess</a>
+                </div>
+              <!-- <div class="subheader-text project-title">Let The Data Confess</div> -->
+              <!-- <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div> -->
+              <div class="role-text">
+                <span class="role">Role:</span> <span class="job-title">Data Science Intern</span>
+              </div>
+            </div>
+            <a class="button" href="./internship-pages/LTDS/INTERN3.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <span class="subheader-text">My Projects</span>
+        <hr>
+        <div class="projects-container">
+
+          <div class="project-card">
+            <img src="./assets/images/desktop.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Real Estate Price Estimator</div>
+            </div>
+            <a class="button" href="./projects/Real_Estate_Price_Estimator/Project1.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/mudra.jpeg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Real Time Mudra Classifier</div>
+            </div>
+            <a class="button" href="./projects/Real_Time_Mudra_Classifier/Mudra.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/track2.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Path Finding Car🚗</div>
+            </div>
+            <a class="button" href="./projects/Path_Finding_Car/path_finding.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+
+      <a class="icon-link"  href="https://www.linkedin.com/in/amit-prajapati-2210261b5">
+        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link"  href="tel: +919930988061">
+        <image src="./assets/icons/phone.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" href="mailto:amitprajapati.work@gmail.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
