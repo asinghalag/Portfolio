@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./Complete.png" />
+  <title>3D Printed Humanoid Robot</title>
+  <link rel="stylesheet" href="./layout.css">
+  <link rel="stylesheet" href="./typography.css">
+  <link rel="stylesheet" href="./utilities.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+  <style>
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .image-gallery img {
+      height: 150px; /* Fixed height for uniformity */
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../../index.html">
+        <span class="nav-title">Home</span>
+      </a>
+    </div>
+<br><br><br>
+
+  <!-- Project Wrapper -->
+  <div class="project-wrapper">
+    <!-- Project Header -->
+    <header>
+      <h1>3D Printed Humanoid Robot 🤖</h1>
+      <p>
+        Collaborated on the design and development of an open-source, 3D-printed humanoid robot named Koalby & Ava, focusing on structural improvements, enhanced functionality, and a multidisciplinary approach involving CAD, electrical, and software engineering.
+      </p>
+    </header>
+
+    <!-- Project Details -->
+    <section class="project-details fade-in">
+      <h2>🔍 Project Overview</h2>
+      <hr>
+      <ul>
+        <li>Developed new robots, Koalby & Ava, with capabilities such as walking and object manipulation to serve as a lab assistant.</li><br>
+        <li>Incorporated computer-aided design (CAD) tools to model complex geometries and simulate movements and interactions.</li><br>
+        <li>Performed ANSYS simulations to ensure structural durability and optimized design under stress.</li><br>
+        <li>Implemented electrical systems for motor control, sensor integration, and real-time data processing.</li><br>
+        <li>Developed software for controlling movement, object recognition, and task automation.</li>
+      </ul>
+    </section>
+
+    <!-- CAD and ANSYS Analysis -->
+    <section class="cad-ansys-analysis fade-in">
+      <h2>📐 CAD and ANSYS Analysis</h2>
+      <hr>
+      <p>
+        Detailed 3D models were created using CAD software to accurately design each part of the robot, from the arms to the legs. These designs were then subjected to force analysis in ANSYS, where Free Body Diagrams helped identify stress points, allowing for targeted improvements in structural integrity.
+      </p>
+      <ul>
+        <li>Improved structural integrity by redesigning the pelvis, chest, and spine based on CAD models.</li>
+        <li>Performed multivariable torque analysis for motor standardization, ensuring optimal performance under various load conditions.</li>
+      </ul>
+      <!-- Image Gallery for CAD Models and ANSYS Results -->
+      <div class="image-gallery">
+        <img src="Complete.png" alt="Complete Robot CAD Model">
+        <img src="Hand.png" alt="3D Model of Robot Hand">
+        <img src="Hip.png" alt="3D Model of Robot Hip">
+        <img src="Torso.png" alt="Robot Torso">
+        <img src="Arms.png" alt="Robot Arms Assembly">
+        <img src="Legs.png" alt="Robot Legs Assembly">
+      </div>
+    </section>
+
+    <!-- Electrical Engineering Section -->
+    <section class="electrical-engineering fade-in">
+      <h2>🔌 Electrical Engineering</h2>
+      <hr>
+      <p>
+        The electrical systems for both the robots included the integration of sensors, actuators, and power systems essential for precise control and feedback. Each component was carefully selected to ensure compatibility, durability, and efficiency.
+      </p>
+      <ul>
+        <li>Designed a power distribution system capable of handling increased motor requirements and sensor data processing.</li>
+        <li>Integrated an IMU sensor in the feet to capture real-time balance data, crucial for stability in dynamic movements.</li>
+        <li>Installed a Huskylens camera and LiDAR on the head and chest for object recognition and obstacle detection, enhancing interaction with the environment.</li>
+        <li>Optimized wiring and connections for reliability and ease of maintenance.</li>
+      </ul>
+    </section>
+
+    <!-- Software Engineering Section -->
+    <section class="software-engineering fade-in">
+      <h2>💻 Software Engineering</h2>
+      <hr>
+      <p>
+        The software development for the robots focused on creating algorithms for navigation, object detection, and task automation. The programming ensured that they could interact with its environment and adapt to changes dynamically.
+      </p>
+      <ul>
+        <li>Developed algorithms for autonomous walking and object manipulation using data from the IMU, camera, and LiDAR sensors.</li>
+        <li>Utilized control systems to manage motor synchronization, ensuring smooth and stable movement across complex terrains.</li>
+        <li>Implemented data processing and decision-making logic, enabling them to perform tasks like object picking and dynamic stabilization.</li>
+        <li>Provided a user-friendly interface for monitoring and adjusting parameters in real time, facilitating hands-on control and experimentation.</li>
+      </ul>
+    </section>
+
+    <br><br>
+    <a class="button" href="Development of 3D Printed Humanoid Robots - Report.pdf">
+      <span class="button-text">Project Report</span>
+    </a>
+
+    <a class="button" href="Official 3D Humanoid Robot_ Design.pptx.pdf">
+      <span class="button-text">Project Presentation</span>
+    </a>
+
+    <!-- Conclusion -->
+    <section class="conclusion fade-in">
+      <h2>🎓 Conclusion</h2>
+      <hr>
+      <p>
+        The development of Koalby & Ava, the 3D-printed humanoid robots, provided hands-on experience in CAD modeling, ANSYS analysis, electrical systems, and software engineering. This project demonstrates the effective application of advanced design, electrical, and programming skills to create a durable and functional humanoid robot for real-world applications.
+      </p>
+    </section>
+  </div>
+
+  <script>
+    function scrollToFooter() {
+      const footer = document.getElementById('footer');
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quadrotor Controller for UAV Capture</title>
+  <link rel="stylesheet" href="./layout.css">
+  <link rel="stylesheet" href="./typography.css">
+  <link rel="stylesheet" href="./utilities.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+  <style>
+    .image-gallery, .video-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .image-gallery img, .video-gallery video {
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../../index.html">
+        <span class="nav-title">Home</span>
+      </a>
+    </div>
+<br><br><br>
+
+  <!-- Project Wrapper -->
+  <div class="project-wrapper">
+    <!-- Project Header -->
+    <header>
+      <h1>Quadrotor Controller for UAV Capture 🚁</h1>
+      <p>
+        Developed a control system for a quadrotor tasked with autonomously monitoring a restricted airspace, detecting intrusions, following, capturing an unidentified UAV, and returning to its base. This project leverages a simulator to model quadrotor dynamics and test control algorithms.
+      </p>
+    </header>
+
+    <!-- Project Details -->
+    <section class="project-details fade-in">
+      <h2>🔍 Project Overview</h2>
+      <hr>
+      <ul>
+        <li>Designed a robust controller for a quadrotor with the goal of detecting, pursuing, capturing, and returning after intercepting an intruding UAV in a controlled airspace.</li><br>
+        <li>The simulator enables testing and optimization of control algorithms under various conditions, providing an essential platform for real-time response testing and environmental adaptability.</li>
+      </ul>
+    </section>
+
+    <!-- Control System Design Section -->
+    <section class="control-system fade-in">
+      <h2>🎯 Control System Design</h2>
+      <hr>
+      <p>
+        The quadrotor’s control system is based on an LQR (Linear-Quadratic Regulator) framework that minimizes deviations in position and orientation while managing energy efficiency. Euler angles are used to represent the quadrotor’s orientation, allowing for precise control adjustments.
+      </p>
+      <ul>
+        <li>Position Control: Ensures accurate detection and tracking of the UAV’s position within the airspace.</li>
+        <li>Orientation Control: Maintains the quadrotor’s stability during pursuit and capture operations.</li>
+        <li>Dynamic Adjustments: The controller dynamically adjusts priorities between position, velocity, and orientation based on proximity to the target UAV.</li>
+      </ul>
+    </section>
+
+    <!-- Simulator Features Section -->
+    <section class="simulator-features fade-in">
+      <h2>💻 Simulator Features</h2>
+      <hr>
+      <p>
+        The quadrotor simulator offers several key features that support the development and refinement of control algorithms:
+      </p>
+      <ul>
+        <li>Quadrotor Dynamics Simulation: Models the quadrotor's response to control inputs using Euler angles.</li>
+        <li>UAV Intrusion Scenario Setup: Creates a test environment for UAV detection and capture missions.</li>
+        <li>Customizable Parameters: Allows for tuning of control parameters to optimize performance and robustness under various conditions.</li>
+      </ul>
+    </section>
+
+    <!-- Image Gallery for System Diagram -->
+    <section class="image-gallery fade-in">
+      <h2>📐 System Diagram</h2>
+      <hr>
+      <div class="image-gallery">
+        <img src="Quadrotor.png" alt="Quadrotor System Diagram">
+      </div>
+    </section>
+
+    
+
+    
+    
+
+    <!-- Conclusion -->
+    <section class="conclusion fade-in">
+      <h2>🎓 Conclusion</h2>
+      <hr>
+      <p>
+        The Quadrotor Controller for UAV Capture project successfully demonstrates the integration of advanced control algorithms within a simulated environment, enabling safe and effective UAV interception and return-to-base operations. This simulator facilitates further research and development in autonomous airspace monitoring and defense applications.
+      </p>
+    </section>
+  </div>
+
+  <script>
+    function scrollToFooter() {
+      const footer = document.getElementById('footer');
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+
+</html>

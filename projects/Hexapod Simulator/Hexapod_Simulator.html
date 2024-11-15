@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hexapod Robot Simulator</title>
+  <link rel="stylesheet" href="./layout.css">
+  <link rel="stylesheet" href="./typography.css">
+  <link rel="stylesheet" href="./utilities.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+  <style>
+    .image-gallery, .video-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .image-gallery img, .video-gallery video {
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../../index.html">
+        <span class="nav-title">Home</span>
+      </a>
+    </div>
+<br><br><br>
+
+  <!-- Project Wrapper -->
+  <div class="project-wrapper">
+    <!-- Project Header -->
+    <header>
+      <h1>Hexapod Robot Simulator 🐜</h1>
+      <p>
+        Developed an advanced simulation tool for stationary hexapod robots, building on a basic simulator with limited features. This project adds enhanced kinematic modeling, detailed gait analysis, and interactive testing capabilities, offering a robust platform for visualizing and refining robot behaviors.
+      </p>
+    </header>
+
+    <!-- Project Details -->
+    <section class="project-details fade-in">
+      <h2>🔍 Project Overview</h2>
+      <hr>
+      <ul>
+        <li>Created a simulation tool for hexapod robots with a focus on Forward and Inverse Kinematics to visualize joint angles and end-effector positions.</li><br>
+        <li>Improved upon a basic simulator by adding features like leg pattern generation, phase diagrams, and various walking gaits such as the tripod gait.</li><br>
+        <li>Provided a user interface to control and observe different gaits and kinematic behaviors in real-time, enhancing usability and feature set.</li>
+      </ul>
+    </section>
+
+    <!-- Kinematic Modeling Section -->
+    <section class="kinematic-modeling fade-in">
+      <h2>📐 Kinematic Modeling</h2>
+      <hr>
+      <p>
+        The simulator uses kinematic modeling for each leg of the hexapod robot, breaking down movements into Coxa, Femur, and Tibia joint angles. This enables accurate calculations of leg positions based on joint configurations.
+      </p>
+      <ul>
+        <li>Forward Kinematics: Calculated end-effector positions from joint angles to visualize robot posture.</li>
+        <li>Inverse Kinematics: Solved for joint angles based on target end-effector positions, allowing for precise control over leg movements.</li>
+      </ul>
+    </section>
+
+    <!-- Simulator Features Section -->
+    <section class="simulator-features fade-in">
+      <h2>💻 Simulator Features</h2>
+      <hr>
+      <p>
+        This project expands upon a simpler hexapod simulator by incorporating advanced tools to aid in robotic visualization and testing, including:
+      </p>
+      <ul>
+        <li>Leg Pattern Manipulation: Adjust individual joint angles to see how leg configurations affect stability.</li>
+        <li>Phase Diagram Generation: Displays the coordination between legs during movement cycles.</li>
+        <li>Walking Gait Simulation: Simulates different gaits, primarily the tripod gait, allowing for stability analysis in movement.</li>
+      </ul>
+    </section>
+
+    <!-- Video Gallery Section -->
+    <section class="video-gallery fade-in">
+      <h2>🎥 Testing Videos</h2>
+      <hr>
+      <p>Below are testing videos that showcase different capabilities of the hexapod robot simulator, from forward and inverse kinematics to various gaits:</p>
+      <div class="video-gallery">
+        <video src="Kinematic Phase.mp4" controls title="Kinematic Phase Diagram"></video>
+        <video src="Simulator startup.mp4" controls title="Simulator Startup"></video>
+        <video src="Tripod Gait.mp4" controls title="Tripod Gait Simulation"></video>
+        <video src="Forward Kinematics.mp4" controls title="Forward Kinematics"></video>
+        <video src="Inverse Kinematics.mp4" controls title="Inverse Kinematics"></video>
+      </div>
+    </section>
+
+    <br><br>
+    <a class="button" href="RBE_521___Final_Report.pdf">
+      <span class="button-text">Project Report</span>
+    </a>
+
+    <!-- Conclusion -->
+    <section class="conclusion fade-in">
+      <h2>🎓 Conclusion</h2>
+      <hr>
+      <p>
+        The Hexapod Robot Simulator provides a robust tool for visualizing and testing stationary hexapod designs, offering insights into kinematic behavior and stability across various gait patterns. As an improvement over simpler simulators, this project enhances flexibility, usability, and the range of kinematic features available, making it a valuable asset for researchers and engineers in hexapod development.
+      </p>
+    </section>
+  </div>
+
+  <script>
+    function scrollToFooter() {
+      const footer = document.getElementById('footer');
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+
+</html>

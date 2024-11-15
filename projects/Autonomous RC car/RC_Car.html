@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RC Car Project</title>
+  <link rel="stylesheet" href="./layout.css">
+  <link rel="stylesheet" href="./typography.css">
+  <link rel="stylesheet" href="./utilities.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+  <style>
+    .image-gallery, .video-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .image-gallery img, .video-gallery video {
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../../index.html">
+        <span class="nav-title">Home</span>
+      </a>
+    </div>
+<br><br><br>
+
+  <!-- Project Wrapper -->
+  <div class="project-wrapper">
+    <!-- Project Header -->
+    <header>
+      <h1>RC Car Project 🚗</h1>
+      <p>
+        Developed an autonomous RC car with path-finding and obstacle-avoidance capabilities, controlled by custom algorithms and sensors, providing a robust platform for experimenting with AI and autonomous navigation.
+      </p>
+    </header>
+
+    <!-- Project Details -->
+    <section class="project-details fade-in">
+      <h2>🔍 Project Overview</h2>
+      <hr>
+      <ul>
+        <li>Designed an RC car equipped with sensors and a control system to navigate autonomously, detect obstacles, and follow designated paths.</li><br>
+        <li>Incorporated real-time path planning algorithms to dynamically adjust the car's route based on the environment.</li>
+      </ul>
+    </section>
+
+    <!-- Control System Design Section -->
+    <section class="control-system fade-in">
+      <h2>🎯 Control System Design</h2>
+      <hr>
+      <p>
+        The control system was designed to allow the RC car to make decisions based on sensor data, enabling path-following and obstacle avoidance.
+      </p>
+      <ul>
+        <li>Path Planning Algorithm: Utilized algorithms to find optimal paths to the target while avoiding obstacles.</li>
+        <li>Obstacle Detection: Integrated sensors to identify obstacles and adjust the car’s route in real time.</li>
+        <li>Feedback Loop: Implemented a feedback loop to continuously adjust speed and steering based on sensor inputs.</li>
+      </ul>
+    </section>
+
+    <!-- System Features Section -->
+    <section class="system-features fade-in">
+      <h2>💻 System Features</h2>
+      <hr>
+      <p>
+        The RC car system includes a variety of features to ensure smooth and responsive operation:
+      </p>
+      <ul>
+        <li>Sensor Array: Equipped with ultrasonic and infrared sensors for obstacle detection.</li>
+        <li>Autonomous Navigation: Designed algorithms for autonomous driving, allowing the car to follow predefined paths or explore an area.</li>
+        <li>Speed and Steering Control: Optimized control of speed and direction to enhance stability and accuracy.</li>
+      </ul>
+    </section>
+
+    <!-- Testing and Results Section -->
+    <section class="testing-results fade-in">
+      <h2>🧪 Testing and Results</h2>
+      <hr>
+      <p>
+        The RC car was tested in various environments to evaluate its path-finding accuracy, obstacle avoidance, and responsiveness.
+      </p>
+      <ul>
+        <li>Path-Finding Test: Achieved an average success rate of 90% in following designated paths under different conditions.</li>
+        <li>Obstacle Avoidance Test: The car consistently detected obstacles and rerouted successfully in 95% of trials.</li>
+        <li>Response Time: Demonstrated a low response time in adjusting speed and direction, ensuring smooth operation.</li>
+      </ul>
+    </section>
+
+  
+
+    <!-- Conclusion Section -->
+    <section class="conclusion fade-in">
+      <h2>🎓 Conclusion</h2>
+      <hr>
+      <p>
+        The RC Car Project successfully demonstrated the integration of autonomous navigation, path-finding, and obstacle avoidance capabilities. This project serves as a foundation for further development in autonomous vehicles and offers a scalable platform for experimenting with advanced AI algorithms in real-world conditions.
+      </p>
+    </section>
+  </div>
+
+  <script>
+    function scrollToFooter() {
+      const footer = document.getElementById('footer');
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+
+</html>

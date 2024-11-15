@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Force Amplification System</title>
+  <link rel="stylesheet" href="./layout.css">
+  <link rel="stylesheet" href="./typography.css">
+  <link rel="stylesheet" href="./utilities.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+  <style>
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .image-gallery img {
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../../index.html">
+        <span class="nav-title">Home</span>
+      </a>
+    </div>
+<br><br><br>
+
+  <!-- Project Wrapper -->
+  <div class="project-wrapper">
+    <!-- Project Header -->
+    <header>
+      <h1> Force Amplification System 🛗</h1>
+      <p>
+        Designed and fabricated a force amplification system for 's elevator emergency brake system, addressing the need for an amplified pulling force in case of insufficient input force from the Electronic Actuation System (ESA).
+      </p>
+    </header>
+
+    <!-- Project Details -->
+    <section class="project-details fade-in">
+      <h2>🔍 Project Overview</h2>
+      <hr>
+      <ul>
+        <li>The project aimed to create a reliable amplification system that increased the input force by a factor of 2.5, meeting the safety requirements for elevators.</li><br>
+        <li>Involved designing and assembling a system that fits within the constrained space provided, while achieving the required force amplification using a rack and pinion mechanism.</li>
+      </ul>
+    </section>
+
+    <!-- Design and Fabrication Section -->
+    <section class="design-fabrication fade-in">
+      <h2>🔧 Design and Fabrication</h2>
+      <hr>
+      <p>
+        The force amplification system was built using a rack and pinion design. Key components were carefully selected based on gear specifications, space constraints, and material strength.
+      </p>
+      <ul>
+        <li>Used laser-cut wood and steel for structural components to ensure stability and precision.</li>
+        <li>Incorporated a gear and rack system with a steel frame to ensure durability and meet amplification requirements.</li>
+        <li>Created a test rig to simulate the system's functionality, verifying static and dynamic performance.</li>
+      </ul>
+    </section>
+
+    <!-- Testing and Results Section -->
+    <section class="testing-results fade-in">
+      <h2>🧪 Testing and Results</h2>
+      <hr>
+      <p>
+        The system was subjected to both static and dynamic tests to ensure that it met the desired force amplification and response time.
+      </p>
+      <ul>
+        <li>Static Testing: Verified a consistent 2.5x amplification factor with input forces around 40N.</li>
+        <li>Dynamic Testing: Measured time response and travel distance, achieving an average response time of 0.112 seconds.</li>
+        <li>Results: Successfully demonstrated a force amplification factor of 2.58, surpassing the target.</li>
+      </ul>
+    </section>
+
+    <!-- Image Gallery for System and Testing Setup -->
+    <section class="image-gallery fade-in">
+      <h2>📐 System Setup</h2>
+      <hr>
+      <div class="image-gallery">
+        <img src="Force.png" alt="Force Amplifier Section View">
+      </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="conclusion fade-in">
+      <h2>🎓 Conclusion</h2>
+      <hr>
+      <p>
+        The  Force Amplification System project was successful in meeting the design constraints and performance goals. It demonstrates the feasibility of using a mechanical amplification system to enhance safety in elevator braking systems, providing a robust solution for real-world applications.
+      </p>
+    </section>
+  </div>
+
+  <script>
+    function scrollToFooter() {
+      const footer = document.getElementById('footer');
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+
+</html>
